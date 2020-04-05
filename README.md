@@ -1,21 +1,46 @@
-# AdventOfCode
+# AdventOfCode 2019
 
-**TODO: Add description**
+This repo has the implementation of the 25 challenges from [Advent of code 2019](https://adventofcode.com/).
 
-## Installation
+## Setup
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `advent_of_code` to your list of dependencies in `mix.exs`:
+Is necessary to have Elixir 1.10 or higher installed.
 
-```elixir
-def deps do
-  [
-    {:advent_of_code, "~> 0.1.0"}
-  ]
-end
+To install the dependencies, run:
+
+```shell
+$ mix deps.get
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/advent_of_code](https://hexdocs.pm/advent_of_code).
+## To run the tests
 
+After the setup step, to run all tests, run the command:
+
+```shell
+$ mix test
+```
+
+## Code style check
+
+In order to run the lint tool, is necessary to do the setup step first, then run the command:
+
+```shell
+$ mix lint
+```
+
+## Challenges
+
+The list of solved challenges are available below.
+
+In order to run the code and get the correct answer run the task mix `day<number-of-the-challenge>`,
+for example:
+
+```shell
+$ mix day1
+```
+
+This will print the result at stdout.
+
+### Challenges completed
+
+- None yet - working on it =)
