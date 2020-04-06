@@ -25,18 +25,26 @@ defmodule AdventOfCodeDay1Test do
   use ExUnit.Case
 
   test "return 2 for mass of 12" do
-    assert AdventOfCode.day1_challenge1(12) == 2
+    assert AdventOfCode.day1_challenge1([12]) == 2
   end
 
   test "return 2 for mass of 14" do
-    assert AdventOfCode.day1_challenge1(14) == 2
+    assert AdventOfCode.day1_challenge1([14]) == 2
   end
 
   test "return 1,969 for mass of 654" do
-    assert AdventOfCode.day1_challenge1(1_969) == 654
+    assert AdventOfCode.day1_challenge1([1_969]) == 654
   end
 
   test "return 33,583 for mass of 100,756" do
-    assert AdventOfCode.day1_challenge1(100_756) == 33_583
+    assert AdventOfCode.day1_challenge1([100_756]) == 33_583
+  end
+
+  test "return 4 for mass of 12 and 14" do
+    assert AdventOfCode.day1_challenge1([12, 14]) == 4
+  end
+
+  test "return 0 for no mass" do
+    assert AdventOfCode.day1_challenge1([]) == 0
   end
 end

@@ -8,5 +8,11 @@ defmodule AdventOfCode.Day1 do
   @doc """
   Challenge 1 from day 1
   """
-  def challenge1(mass), do: Integer.floor_div(mass, 3) - 2
+  def challenge1(mass_list) do
+    mass_list
+    |> Enum.map(&mass_calculation/1)
+    |> Enum.sum()
+  end
+
+  defp mass_calculation(mass), do: Integer.floor_div(mass, 3) - 2
 end
