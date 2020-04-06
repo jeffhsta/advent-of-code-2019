@@ -1,0 +1,24 @@
+defmodule Mix.Tasks.Challenge do
+  use Mix.Task
+
+  @spec run([binary]) :: any
+  def run([challenge_day, challenge_number]) do
+    input = Application.get_env(:advent_of_code, :"day#{challenge_day}_challenge#{challenge_number}")
+    module = :"Elixir.AdventOfCode"
+    function = :"day#{challenge_day}_challenge#{challenge_number}"
+
+    run_challenge(module, function, input)
+  end
+
+  defp run_challenge(_module, function, nil),
+    do: raise("Challenge #{function} not found")
+
+  defp run_challenge(module, function, input) do
+    IO.puts("Running challenge #{function}")
+
+    input
+    |> Enum.map(&apply(module, function, [&1]))
+    |> Enum.join("\n")
+    |> IO.puts()
+  end
+end
