@@ -1,7 +1,7 @@
 use Mix.Config
 
 config :advent_of_code,
-  day1_challenge1: [
+  day1: [
     130_676,
     85676,
     100_556,

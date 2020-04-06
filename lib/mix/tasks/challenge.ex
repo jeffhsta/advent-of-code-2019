@@ -8,7 +8,7 @@ defmodule Mix.Tasks.Challenge do
   @spec run([binary]) :: any
   def run([challenge_day, challenge_number]) do
     input =
-      Application.get_env(:advent_of_code, :"day#{challenge_day}_challenge#{challenge_number}")
+      Application.get_env(:advent_of_code, :"day#{challenge_day}")
 
     module = :"Elixir.AdventOfCode"
     function = :"day#{challenge_day}_challenge#{challenge_number}"
