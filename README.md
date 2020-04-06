@@ -32,15 +32,15 @@ $ mix lint
 
 The list of solved challenges are available below.
 
-In order to run the code and get the correct answer run the task mix `day<number-of-the-challenge>`,
+In order to run the code and get the correct answer run the task mix `challenge <number-of-the-day> <number-of-the-challenge-from-that-day>`,
 for example:
 
 ```shell
-$ mix day1
+$ mix challenge 1 1
 ```
 
 This will print the result at stdout.
 
 ### Challenges completed
 
-- None yet - working on it =)
+- Day 1 challenge 1
