@@ -8,4 +8,7 @@ defmodule AdventOfCode do
 
   @spec day1_challenge2(integer) :: integer
   def day1_challenge2(mass), do: AdventOfCode.Day1.challenge2(mass)
+
+  @spec day2_challenge1(String.t()) :: integer
+  def day2_challenge1(intcode), do: intcode |> AdventOfCode.Day2.challenge1() |> hd()
 end
