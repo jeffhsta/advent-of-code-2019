@@ -15,7 +15,6 @@ defmodule AdventOfCode.Day2 do
     |> String.split(",")
     |> Enum.map(fn number_str -> number_str |> Integer.parse() |> elem(0) end)
     |> process_command(0)
-    |> Enum.join(",")
   end
 
   defp process_command(integers, interation_number) do
